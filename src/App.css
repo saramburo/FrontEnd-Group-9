@@ -1,21 +1,12 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  font-size: 16px;
+  overflow-x: hidden;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  max-width: 100%;
+  box-sizing: border-box;
+  --dark-green: #00202e;
+  --cream: #fffaf0;
 }
 
 @keyframes logo-spin {
@@ -33,10 +24,117 @@
   }
 }
 
-.card {
-  padding: 2em;
+.ul-navbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0 auto;
+
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+.header {
+  height: 100px;
+  width: 100vw;
+  background-color: #fffaf0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.navbar {
+  height: 100px;
 }
 
-.read-the-docs {
-  color: #888;
+.header-nav-link {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+}
+.header-nav-link:hover {
+  color: #cb7f07;
+  font-size: 1.5rem;
+}
+
+.content-reservas {
+  border: solid var(--dark-green) 2px;
+  padding: 15px 20px;
+}
+
+.header-nav-link-reservas {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+}
+.header-nav-link-reservas:hover {
+  color: var(--dark-green);
+  font-size: 1.8rem;
+}
+.banner-image {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  height: auto;
+}
+footer {
+  position: static;
+  height: 450px;
+  width: 100vw;
+  background-color: var(--dark-green);
+}
+.home-menu {
+  height: 950px;
+  width: 100vw;
+  background-color: var(--cream);
+}
+.home-eventos {
+  height: 950px;
+  width: 100vw;
+  background-color: var(--dark-green);
+}
+
+p {
+  color: white;
+  font-size: 40px;
+}
+
+.home-menu-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  border: var(--dark-green) 2px solid;
+  width: 1300px;
+  height: auto;
+}
+.home-menu-subcontainer {
+  width: 600px;
+  height: 400px;
+}
+
+.home-menu-subcontainer-img {
+  width: 600px;
+  height: 400px;
+}
+
+.home-menu-subcontainer-text {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.home-event-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
