@@ -13,7 +13,7 @@ function Footer() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-subcontent">
-            <h3 className="footer-text">SIGUENOS</h3>
+            <h3 className="footer-text">SÍGUENOS</h3>
             <div className="footer-icon">
               <FontAwesomeIcon icon={faFacebook} />
               <FontAwesomeIcon icon={faInstagram} />

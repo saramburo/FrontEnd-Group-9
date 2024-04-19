@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Home from "./pages/Home";
+
 import React from "react";
 import About from "./pages/About";
 import Eventos from "./pages/Eventos";
 import Menu from "./pages/Menu";
 import Reservas from "./pages/Reservas";
+import Home from "./pages/Home";
 
 import "./App.css";
 import Root from "./components/Root";
@@ -16,6 +17,7 @@ import {
   Link,
   NavLink,
   Routes,
+  BrowserRouter as Router,
 } from "react-router-dom";
 
 function App() {
