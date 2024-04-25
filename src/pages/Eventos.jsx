@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import img1 from "../assets/pexels-razane-adra-13215204.jpg";
 function Eventos() {
   return (
     <>
@@ -11,10 +11,7 @@ function Eventos() {
       <div className="grid-container">
         <div className="about-image-grid">
           <div className="event-image-grid-1">
-            <img
-              src="src\assets\pexels-razane-adra-13215204.jpg"
-              class="gallery__img"
-            />
+            <img src={img1} class="gallery__img" />
           </div>
           <div className="event-image-grid-2">
             <img
