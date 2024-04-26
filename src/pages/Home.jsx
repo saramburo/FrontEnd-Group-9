@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 import bannerImage from "../assets/qui-nguyen-S6atLH5Rf0U-unsplash.jpg";
+import img1 from "../assets/jacek-dylag-P1djASp78Ss-unsplash.jpg";
+import img2 from "../assets/thomas-tucker-MNtag_eXMKw-unsplash.jpg";
 
 function Home() {
   return (
@@ -14,7 +16,7 @@ function Home() {
             <div className="home-menu-subcontainer">
               <img
                 className="home-menu-subcontainer-img"
-                src="src\assets\jacek-dylag-P1djASp78Ss-unsplash.jpg"
+                src={img1}
                 alt="copas de vino"
               />
             </div>
@@ -29,8 +31,8 @@ function Home() {
             <div className="home-menu-subcontainer">
               <img
                 className="home-menu-subcontainer-img"
-                src="src\assets\jacek-dylag-P1djASp78Ss-unsplash.jpg"
-                alt="copas de vino"
+                src={img2}
+                alt="comida"
               />
             </div>
           </div>
