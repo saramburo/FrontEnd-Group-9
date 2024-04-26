@@ -30,7 +30,7 @@ function Dia() {
 
   return (
     <>
-      <p>Selecciona Día de la Reserva</p>
+      <h2>Selecciona Día de la Reserva</h2>
       <form>
         <label>Selecciona la Fecha:</label>
         <DatePicker selected={date} onChange={(date) => setDate(date)} />
