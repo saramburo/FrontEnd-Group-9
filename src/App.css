@@ -7,15 +7,10 @@
   box-sizing: border-box;
   --dark-green: #00202e;
   --cream: #fffaf0;
+  --yellow: #fdd03b;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  background-color: var(--dark-green);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,6 +19,7 @@
   }
 }
 
+/*Navigation Bar*/
 .ul-navbar {
   display: flex;
   flex-direction: row;
@@ -67,30 +63,64 @@
   color: var(--dark-green);
   font-size: 1.8rem;
 }
+
+/*footer*/
+footer {
+  height: 300px;
+  width: 100vw;
+  background-color: var(--dark-green);
+  position: static;
+}
+
+.footer-text {
+  color: var(--yellow);
+  font-size: 1rem;
+  text-align: center;
+  width: 200px;
+}
+.icon-footer {
+  color: var(--yellow);
+  padding: 0 5px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.footer-subcontent {
+  padding: 0 100px;
+}
+.footer-subcontent-min {
+  margin: 100px;
+}
+.footer-text-min {
+  color: var(--yellow);
+  font-size: 0.8rem;
+}
+
+/*home*/
 .banner-image {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
-
-main {
-  height: auto;
-}
-footer {
-  height: 450px;
-  width: 100vw;
-  background-color: var(--dark-green);
-  position: static;
-}
 .home-menu {
+  padding-top: 60px;
   height: 950px;
   width: 100vw;
   background-color: var(--cream);
 }
 .home-eventos {
-  height: 950px;
   width: 100vw;
   background-color: var(--dark-green);
+}
+.text-homepage {
+  color: var(--yellow);
+  padding: 60px;
+  margin: 0;
 }
 
 p {
@@ -136,6 +166,8 @@ p {
   align-items: center;
   align-content: center;
 }
+
+/*Nosotros-About*/
 .title-container {
   position: static;
 }
@@ -189,27 +221,24 @@ p {
   grid-row-end: 4;
 }
 
+/*Reservas y menu*/
 .reserva-container-section-1 {
   display: flex;
   flex-direction: row;
   background-color: var(--dark-green);
-}
-
-.reserva-container-section-2 {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--cream);
-}
-
-.reserva-image {
-  width: 300px;
-  height: 450px;
-  object-fit: cover;
+  justify-content: center;
+  column-gap: 100px;
+  padding: 20px;
 }
 
 .reserva-image-2 {
-  width: 900px;
-  height: 450px;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+.reserva-image {
+  width: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -225,7 +254,24 @@ p {
   width: 350px;
   height: 70px;
 }
-
+.reserva-evento-section {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  row-gap: 50px;
+}
+.reserva-boton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  padding: 15px;
+}
+/*reserva evento */
 p {
   color: var(--dark-green);
 }
@@ -240,20 +286,31 @@ p {
 .eventos-reservables {
   border: 1px solid black;
   padding: 20px 100px;
+  background-color: var(--cream);
 }
 
 .bloque-reserva {
   border: 1px solid black;
   padding: 20px 100px;
 }
-
+h3.title-reservas {
+  color: var(--yellow);
+}
 .reservacion {
   border: 1px solid black;
   padding: 20px 100px;
+  background-color: var(--dark-green);
+}
+li.reserva-realizada {
+  color: var(--yellow);
+}
+p.reserva-realizada {
+  color: var(--yellow);
 }
 .reservas-realizadas-container {
   border: 1px solid black;
   padding: 20px 100px;
+  color: var(--yellow);
 }
 ul {
   list-style: none;
@@ -269,7 +326,7 @@ ul {
   font-size: 1.3rem;
 }
 h2 {
-  color: var(--dark-green);
+  color: var(--yellow);
   font-size: 2.5rem;
 }
 h3 {
@@ -277,8 +334,48 @@ h3 {
   font-size: 2rem;
   text-align: center;
 }
-.footer-text {
-  color: var(--cream);
-  font-size: 1rem;
-  text-align: center;
+/*reserva  día*/
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  row-gap: 10px;
+}
+/*eventos*/
+.event-grid-container {
+  width: 55%;
+  margin: 0 auto;
+}
+.event-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 25px;
+  margin: 0 auto;
+}
+
+.event-image-grid-1 {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+.event-image-grid-1:hover {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  animation-name: imagen-evento;
+  animation-duration: 1s;
+}
+
+@keyframes imagen-evento {
+  from {
+    width: 400px;
+    height: 500px;
+  }
+  to {
+    transform: translate(-10px, -10px);
+  }
 }

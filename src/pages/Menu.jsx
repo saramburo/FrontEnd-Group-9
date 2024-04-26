@@ -9,7 +9,7 @@ function Menu() {
       <main>
         <div className="reserva-container">
           <div className="subtitle">
-            <h3>Menú Online</h3>
+            <h2>Menú Online</h2>
           </div>
           <div className="reserva-container-section-2">
             <div className="reserva-image-container">

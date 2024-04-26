@@ -15,11 +15,11 @@ function Footer() {
           <div className="footer-subcontent">
             <h3 className="footer-text">SÍGUENOS</h3>
             <div className="footer-icon">
-              <FontAwesomeIcon icon={faFacebook} />
-              <FontAwesomeIcon icon={faInstagram} />
-              <FontAwesomeIcon icon={faYoutube} />
-              <FontAwesomeIcon icon={faThreads} />
-              <FontAwesomeIcon icon={faXTwitter} />
+              <FontAwesomeIcon icon={faFacebook} className="icon-footer" />
+              <FontAwesomeIcon icon={faInstagram} className="icon-footer" />
+              <FontAwesomeIcon icon={faYoutube} className="icon-footer" />
+              <FontAwesomeIcon icon={faThreads} className="icon-footer" />
+              <FontAwesomeIcon icon={faXTwitter} className="icon-footer" />
             </div>
           </div>
           <div className="footer-subcontent">
@@ -28,9 +28,9 @@ function Footer() {
           <div className="footer-subcontent">
             <h3 className="footer-text">REGALA UNA INVITACIÓN</h3>
           </div>
-          <div className="footer-subcontent-min">
-            <h3 className="footer-text-min">Términos y Condiciones</h3>
-          </div>
+        </div>
+        <div className="footer-subcontent-min">
+          <h3 className="footer-text-min">Términos y Condiciones</h3>
         </div>
       </footer>
     </>

@@ -11,18 +11,18 @@ function Eventos() {
       <div className="title-container">
         <h2 className="title-text">Eventos</h2>
       </div>
-      <div className="grid-container">
-        <div className="about-image-grid">
+      <div className="event-grid-container">
+        <div className="event-image-grid">
           <div className="event-image-grid-1">
             <img src={img1} class="gallery__img" />
           </div>
-          <div className="event-image-grid-2">
+          <div className="event-image-grid-1">
             <img src={img2} class="gallery__img" />
           </div>
-          <div className="event-image-grid-3">
+          <div className="event-image-grid-1">
             <img src={img3} class="gallery__img" />
           </div>
-          <div className="event-image-grid-4">
+          <div className="event-image-grid-1">
             <img src={img4} className="gallery__img" />
           </div>
         </div>

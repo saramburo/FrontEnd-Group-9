@@ -10,7 +10,9 @@ function Dia() {
   const handleClick = (event) => {
     if (date !== "" && personas > 0 && (correo !== null || correo !== "")) {
       alert(
-        `Solicitud Enviada, espera tu confirmación en: ${correo} y ${personas} personas`
+        `Solicitud Enviada, espera tu confirmación ${correo}, para ${personas} personas, el día ${date.getDate()}/${
+          date.getMonth() + 1
+        }/${date.getFullYear()}`
       );
     } else {
       alert("falta info");
@@ -30,6 +32,7 @@ function Dia() {
     <>
       <p>Selecciona Día de la Reserva</p>
       <form>
+        <label>Selecciona la Fecha:</label>
         <DatePicker selected={date} onChange={(date) => setDate(date)} />
         <label>Cantidad de Personas</label>
         <input

@@ -71,7 +71,7 @@ function Evento() {
           </ul>
         </div>
         <div className="reservacion">
-          <h3>Mis Reservas</h3>
+          <h3 className="title-reservas">Mis Reservas</h3>
           <ul>
             {reservas.map((reserva) => {
               return (
