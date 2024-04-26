@@ -369,6 +369,9 @@ form {
   animation-name: imagen-evento;
   animation-duration: 1s;
 }
+label {
+  color: var(--yellow);
+}
 
 @keyframes imagen-evento {
   from {
